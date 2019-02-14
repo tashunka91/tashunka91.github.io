@@ -5,7 +5,14 @@
 <a-scene embedded arjs=’sourceType: webcam;’>
 
 <a-marker preset="Hiro">
-  <a-entity  obj-model="obj: url(https://raw.githubusercontent.com/tashunka91/ar-try/master/9827cent.obj?token=Ap6omANNtBJ0EXruPRFQLw35sEjttHc6ks5cYfynwA%3D%3D); mtl: url(https://raw.githubusercontent.com/tashunka91/tashunka91.github.io-AR-files/master/9827cent.mtl)" scale="0.1 0.1 0.1"></a-entity>
+
+
+  <a-assets>
+    <a-asset-item id="9827-obj" src="https://raw.githubusercontent.com/tashunka91/ar-try/master/9827cent.obj?token=Ap6omANNtBJ0EXruPRFQLw35sEjttHc6ks5cYfynwA%3D%3D"></a-asset-item>
+    <a-asset-item id="9827-mtl" src="https://raw.githubusercontent.com/tashunka91/tashunka91.github.io-AR-files/master/9827cent.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity obj-model="obj: #9827-obj; mtl: #9827-mtl"></a-entity>
 
 </a-marker>
 <a-entity camera>
